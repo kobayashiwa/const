@@ -11,10 +11,6 @@ body {
 }
 a {
 	text-decoration: none;
-	color: #297CBB;
-}
-a:hover {
-	text-decoration: underline;
 }
 ul, li {
 	list-style: none;
@@ -60,10 +56,10 @@ h4 {
 	line-height: 1.2;
 	margin-bottom: 24px;
 }
-.btn a {
+.btn {
+	color: #fff;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #fff;
 	font-size: 12px;
 	border: 1px solid #fff;
 	padding: 8px 16px;
@@ -72,6 +68,27 @@ h4 {
 	display: inline-block;
 	position: relative;
 }
+.btn:hover {
+	color: #2C3543;
+}
+.btn::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	content: '';
+	background: #fff;
+	transform-origin: right top;
+	transform: scale(0, 1);
+	transition: transform .3s;
+	border-radius: 24px;
+  }
+  .btn:hover::before {
+	transform-origin: left top;
+	transform: scale(1, 1);
+  }
 .next a {
 	padding-right: 40px;
 }
