@@ -34,3 +34,6 @@ ul, li {
 .PreviousLink {
 	width: 50%;
 }
+.cover img {
+	width: 100%;
+}
