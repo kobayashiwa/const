@@ -119,3 +119,9 @@ h4 {
 	transform: rotate(225deg);
 	margin-top: -4px;
 }
+@media (max-width: 1000px) {
+	.article-title {
+		font-size: 24px;
+	}
+}
+
