@@ -58,4 +58,47 @@ h4 {
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 1.2;
+	margin-bottom: 24px;
+}
+.btn a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	border: 1px solid #fff;
+	padding: 8px 16px;
+	border-radius: 24px;
+	letter-spacing: .1em;
+	display: inline-block;
+	position: relative;
+}
+.next a {
+	padding-right: 40px;
+}
+.previous a {
+	padding-left: 40px;
+}
+.next a span::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 16px;
+	width: 6px;
+	height: 6px;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	transform: rotate(45deg);
+	margin-top: -4px;
+}
+.previous a span::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 16px;
+	width: 6px;
+	height: 6px;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	transform: rotate(225deg);
+	margin-top: -4px;
 }
